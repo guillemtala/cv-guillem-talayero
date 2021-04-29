@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    text-align: left;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+#header h1 {
+    font-size: 50px;
+}
+
+.header {
+    background: black;
+    color: white;
+    padding: 0.1rem 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 10px 3px 3px white;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 3vw;
+    padding-left: 25px;
+    font-weight: 900;
+}
+
+.header1 {
+    width: 85%;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.navigation ul li a:hover {
+    background: grey;
+    color: black;
+}
+
+
+/*Menú*/
+
+#portada {
+    background-color: black;
+    float: left;
+    width: 100%;
+    color: white;
+}
+
+#portada img {
+    border-radius: 40%;
+}
+
+.column1 {
+    width: 50%;
+    float: left;
+}
