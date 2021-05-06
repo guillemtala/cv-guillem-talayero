@@ -24,6 +24,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.relleno-section {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
 #header {
     text-align: left;
     width: 100%;
@@ -98,7 +103,6 @@ html {
 
 #portada {
     background-color: black;
-    float: left;
     width: 100%;
     color: white;
     border-bottom: 3px solid white;
@@ -114,6 +118,10 @@ html {
     margin-top: 0;
     padding-top: 0;
     transition: all 0.4s linear;
+}
+
+#portada a {
+    text-decoration: none;
 }
 
 #portada img {
@@ -150,11 +158,15 @@ html {
     border-bottom: 3px solid;
 }
 
+#section4 {
+    color: white;
+    border-bottom: 3px solid;
+}
+
 .column2 {
     width: 50%;
     float: left;
     padding: 3vw;
-    font-size: 1vw;
 }
 
 .column2 img {
@@ -167,6 +179,7 @@ html {
     font-size: 4vw;
     color: red;
     font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .column2 i {
@@ -176,7 +189,13 @@ html {
 
 .column2 iframe {
     width: 43vw;
-    height: 30vw;
+    height: 32vw;
+    padding-top: 4vw;
+}
+
+.column2 h3 {
+    font-size: 1.5vw;
+    color: white;
 }
 
 .social {
@@ -185,10 +204,13 @@ html {
 
 .social i {
     font-size: 4vw;
+    padding: 1.5vw;
 }
 
-#section3 {
-    color: white;
+.social i:hover {
+    background-color: white;
+    border-radius: 20%;
+    transition: all 0.2s linear;
 }
 
 .column3 {
@@ -204,6 +226,7 @@ html {
     color: red;
     text-align: center;
     font-size: 4vw;
+    font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -224,11 +247,17 @@ progress[value] {
     border: 1px inset black;
     background-color: white;
     border-radius: 20px;
+    transition: all 0.4s linear;
 }
 
 progress::-webkit-progress-value {
     background: red;
     border-radius: 20px;
+    transition: all 0.4s linear;
+}
+
+.progress span {
+    font-size: 2vw;
 }
 
 @media screen and (max-width: 750px) {
@@ -287,5 +316,51 @@ progress::-webkit-progress-value {
     .column2 {
         width: 100%;
         float: left;
+    }
+    .column2 h2 {
+        font-size: 8vw;
+    }
+    .column2 i {
+        font-size: 15vw;
+    }
+    .column2 h3 {
+        font-size: 4vw;
+        color: white;
+    }
+    .column2 iframe {
+        width: 100%;
+        height: 55vw;
+    }
+    .column2 img {
+        width: 100%;
+    }
+    .column4 h2 {
+        color: red;
+        text-align: center;
+        font-size: 8vw;
+    }
+    progress[value] {
+        /* Elimino la apariencia por defecto */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        /* Quito el borde que aparece en Firefox */
+        border: none;
+        /* Añado mis propios estilos */
+        width: 75vw;
+        height: 7vw;
+        overflow: hidden;
+        /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+        border: 1px inset black;
+        background-color: white;
+        border-radius: 20px;
+        transition: all 0.4s linear;
+    }
+    #portada i {
+        width: 10vw;
+        font-size: 25vw;
+    }
+    .progress span {
+        font-size: 3.5vw;
     }
 }
