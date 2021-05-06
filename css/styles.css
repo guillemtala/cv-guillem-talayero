@@ -7,6 +7,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("../img/21omxpw.jpg");
+    background-attachment: fixed;
 }
 
 
@@ -87,7 +89,7 @@ html {
 }
 
 .navigation ul li a:hover {
-    background: grey;
+    background: red;
     color: black;
 }
 
@@ -99,13 +101,191 @@ html {
     float: left;
     width: 100%;
     color: white;
+    border-bottom: 3px solid white;
+}
+
+#portada i {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4vw;
+    font-size: 6vw;
+    color: red;
+    margin-top: 0;
+    padding-top: 0;
+    transition: all 0.4s linear;
 }
 
 #portada img {
     border-radius: 40%;
+    padding: 3vw;
+    width: 45vw;
 }
 
 .column1 {
     width: 50%;
     float: left;
+}
+
+.column1 h1 {
+    font-size: 5vw;
+    text-align: right;
+    letter-spacing: 5px;
+    padding: 7vw 0;
+    transition: all 0.4s linear;
+}
+
+#section1 {
+    color: white;
+    border-bottom: 3px solid;
+}
+
+#section2 {
+    color: white;
+    border-bottom: 3px solid;
+}
+
+#section3 {
+    color: white;
+    border-bottom: 3px solid;
+}
+
+.column2 {
+    width: 50%;
+    float: left;
+    padding: 3vw;
+    font-size: 1vw;
+}
+
+.column2 img {
+    width: 40vw;
+    float: left;
+    padding: 3vw;
+}
+
+.column2 h2 {
+    font-size: 4vw;
+    color: red;
+    font-weight: bold;
+}
+
+.column2 i {
+    font-size: 2vw;
+    color: red;
+}
+
+.column2 iframe {
+    width: 43vw;
+    height: 30vw;
+}
+
+.social {
+    font-size: 3vw;
+}
+
+.social i {
+    font-size: 4vw;
+}
+
+#section3 {
+    color: white;
+}
+
+.column3 {
+    box-shadow: 10px 3px 3px white;
+}
+
+.column4 {
+    float: left;
+    width: 100%;
+}
+
+.column4 h2 {
+    color: red;
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+/*Barras*/
+
+progress[value] {
+    /* Elimino la apariencia por defecto */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Quito el borde que aparece en Firefox */
+    border: none;
+    /* Añado mis propios estilos */
+    width: 20vw;
+    height: 2vw;
+    overflow: hidden;
+    /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+    border: 1px inset black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+    background: red;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        position: sticky;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul {
+        padding-left: 10px;
+    }
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+    .navigation ul li a:hover {
+        background: red;
+        color: white;
+    }
+    .logo {
+        font-size: 6vw;
+    }
+    #portada {
+        background-image: url("../img/mascotas-perros-gatos-conejos.jpg");
+        padding: 20vw;
+        background-attachment: scroll;
+    }
+    #portada h1 {
+        font-size: 10vw;
+    }
+    .column1 {
+        width: 100%;
+        float: left;
+    }
+    .column1 h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+    #portada img {
+        border-radius: 40%;
+        padding: 0;
+        width: 60vw;
+        float: left;
+    }
+    .column2 {
+        width: 100%;
+        float: left;
+    }
 }
