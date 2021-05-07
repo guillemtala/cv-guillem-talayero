@@ -262,7 +262,7 @@ progress::-webkit-progress-value {
 
 @media screen and (max-width: 750px) {
     .header {
-        position: sticky;
+        position: relative;
     }
     .navigation {
         width: 100%;
