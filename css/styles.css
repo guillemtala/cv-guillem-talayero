@@ -163,6 +163,15 @@ html {
     border-bottom: 3px solid;
 }
 
+#section5 {
+    color: white;
+    border-bottom: 3px solid;
+}
+
+#footer {
+    background-color: black;
+}
+
 .column2 {
     width: 50%;
     float: left;
@@ -227,6 +236,59 @@ html {
     text-align: center;
     font-size: 4vw;
     font-family: 'Permanent Marker', cursive;
+}
+
+.column5 {
+    width: 50%;
+    float: left;
+}
+
+.column5 i {
+    padding: 3vw;
+    font-size: 40vw;
+    color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column6 {
+    width: 50%;
+    float: left;
+}
+
+.column6 i {
+    padding: 3vw;
+    font-size: 40vw;
+    color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column7 {
+    width: 50%;
+    float: left;
+    padding: 3vw;
+}
+
+.column7 h2 {
+    font-size: 2vw;
+    color: red;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.column7 i {
+    font-size: 5vw;
+    color: red;
+}
+
+.language {
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 
@@ -362,5 +424,42 @@ progress::-webkit-progress-value {
     }
     .progress span {
         font-size: 3.5vw;
+    }
+    .column5 {
+        width: 100%;
+    }
+    .column5 i {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 100vw;
+        padding: 6vw;
+        transition: all 0.4s linear;
+    }
+    .column6 {
+        width: 100%;
+    }
+    .column6 i {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 80vw;
+        padding: 6vw;
+        transition: all 0.4s linear;
+    }
+    .column7 {
+        width: 100%;
+    }
+    .column7 h2 {
+        font-size: 8vw;
+    }
+    .column7 i {
+        font-size: 15vw;
+    }
+    .language {
+        font-size: 7vw;
+        background-color: black;
+        color: white;
+        border: none;
     }
 }
